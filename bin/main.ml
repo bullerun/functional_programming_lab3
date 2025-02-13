@@ -88,7 +88,9 @@ let process_input step method_name window_size =
             | _ -> []
           in
           if interpolated <> [] then
-            List.iter (fun (x, y) -> Printf.printf "%.2f %.2f\n" x y) interpolated;
+            List.iter
+              (fun (x, y) -> Printf.printf "%.2f %.2f\n" x y)
+              interpolated;
           loop new_points
     with End_of_file -> ()
   in
