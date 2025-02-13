@@ -1,0 +1,4 @@
+(executable
+ (public_name functional_programming_lab3)
+ (name main)
+ (libraries functional_programming_lab3 str))
